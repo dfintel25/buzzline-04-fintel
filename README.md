@@ -221,7 +221,7 @@ Windows:
 ```shell
 .venv\Scripts\activate
 
-P4 project:
+P4 Project:
 py -m producers.project_producer_fintel
 py -m consumers.project_consumer_fintel
 
