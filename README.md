@@ -221,6 +221,10 @@ Windows:
 ```shell
 .venv\Scripts\activate
 
+P4 project:
+py -m producers.project_producer_fintel
+py -m consumers.project_consumer_fintel
+
 basic_json:
 py -m producers.basic_json_producer_fintel
 py -m consumers.basic_json_consumer_fintel

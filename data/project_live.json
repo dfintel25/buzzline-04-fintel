@@ -1,0 +1,15 @@
+{"message": "I just saw recipe! It was boring.", "author": "Bob", "timestamp": "2025-09-17 18:23:10", "category": "food", "sentiment": 0.58, "keyword_mentioned": "recipe", "message_length": 33}
+{"message": "I just found game! It was exciting.", "author": "Charlie", "timestamp": "2025-09-17 18:23:15", "category": "gaming", "sentiment": 0.96, "keyword_mentioned": "game", "message_length": 35}
+{"message": "I just tried Python! It was boring.", "author": "Eve", "timestamp": "2025-09-17 18:23:20", "category": "tech", "sentiment": 0.3, "keyword_mentioned": "Python", "message_length": 35}
+{"message": "I just found an app! It was boring.", "author": "Alice", "timestamp": "2025-09-17 18:23:25", "category": "other", "sentiment": 0.43, "keyword_mentioned": "other", "message_length": 35}
+{"message": "I just loved an app! It was amazing.", "author": "Eve", "timestamp": "2025-09-17 18:23:30", "category": "other", "sentiment": 0.36, "keyword_mentioned": "other", "message_length": 36}
+{"message": "I just shared a movie! It was weird.", "author": "Eve", "timestamp": "2025-09-17 18:23:35", "category": "entertainment", "sentiment": 0.06, "keyword_mentioned": "movie", "message_length": 36}
+{"message": "I just loved a meme! It was boring.", "author": "Alice", "timestamp": "2025-09-17 18:23:40", "category": "humor", "sentiment": 0.8, "keyword_mentioned": "meme", "message_length": 35}
+{"message": "I just shared Python! It was weird.", "author": "Bob", "timestamp": "2025-09-17 18:23:45", "category": "tech", "sentiment": 0.25, "keyword_mentioned": "Python", "message_length": 35}
+{"message": "I just found a movie! It was exciting.", "author": "Charlie", "timestamp": "2025-09-17 18:23:50", "category": "entertainment", "sentiment": 0.5, "keyword_mentioned": "movie", "message_length": 38}
+{"message": "I just found a movie! It was funny.", "author": "Charlie", "timestamp": "2025-09-17 18:23:55", "category": "entertainment", "sentiment": 0.24, "keyword_mentioned": "movie", "message_length": 35}
+{"message": "I just shared Python! It was amazing.", "author": "Charlie", "timestamp": "2025-09-17 18:24:00", "category": "tech", "sentiment": 0.35, "keyword_mentioned": "Python", "message_length": 37}
+{"message": "I just tried game! It was boring.", "author": "Bob", "timestamp": "2025-09-17 18:24:05", "category": "gaming", "sentiment": 0.14, "keyword_mentioned": "game", "message_length": 33}
+{"message": "I just tried a meme! It was weird.", "author": "Charlie", "timestamp": "2025-09-17 18:24:10", "category": "humor", "sentiment": 0.34, "keyword_mentioned": "meme", "message_length": 34}
+{"message": "I just found Python! It was amazing.", "author": "Alice", "timestamp": "2025-09-17 18:24:15", "category": "tech", "sentiment": 0.81, "keyword_mentioned": "Python", "message_length": 36}
+{"message": "I just loved JavaScript! It was amazing.", "author": "Alice", "timestamp": "2025-09-17 18:24:20", "category": "tech", "sentiment": 0.06, "keyword_mentioned": "JavaScript", "message_length": 40}
