@@ -1,5 +1,5 @@
 """
-basic_json_consumer_case.py
+basic_json_consumer_fintel.py
 
 Read a JSON-formatted file as it is being written. 
 

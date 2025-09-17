@@ -1,5 +1,5 @@
 """
-basic_json_producer_case.py
+basic_json_producer_fintel.py
 
 Generate some streaming buzz message json data to a file without using Kafka.
 

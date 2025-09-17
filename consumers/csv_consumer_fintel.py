@@ -1,5 +1,5 @@
 """
-csv_consumer_case.py
+csv_consumer_fintel.py
 
 Consume json messages from a Kafka topic and visualize author counts in real-time.
 

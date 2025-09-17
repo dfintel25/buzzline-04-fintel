@@ -215,6 +215,25 @@ For each one, you will need to:
    - Look in the producers folder for csv_producer_case.
    - Look in the consumers folder for csv_consumer_case.
 
+## Task 6: New Producer & Consumer prompts
+Windows:
+
+```shell
+.venv\Scripts\activate
+
+basic_json:
+py -m producers.basic_json_producer_fintel
+py -m consumers.basic_json_consumer_fintel
+
+csv:
+py -m producers.csv_producer_fintel
+py -m consumers.csv_consumer_fintel
+
+json:
+py -m producers.json_producer_fintel
+py -m consumers.json_consumer_fintel
+```
+
 ### Review the Application Code
 
 Review the code for both the producer and the consumer.
