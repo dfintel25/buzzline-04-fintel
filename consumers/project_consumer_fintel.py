@@ -48,61 +48,6 @@ author_counts = defaultdict(int)
 #####################################
 # Set up live visuals
 #####################################
-'''
-fig, ax = plt.subplots()
-plt.ion()  # Turn on interactive mode for live updates
-'''
-'''
-# Two subplots: 
-# - Top: bar chart of author counts
-# - Bottom: timeline of message arrivals
-fig, (ax_counts, ax_timeline) = plt.subplots(2, 1, figsize=(8, 6), sharex=False)
-plt.ion()
-
-# Global timeline storage
-timestamps = []
-message_indices = []
-message_counter = 0
-last_timestamp = None
-#####################################
-# Define an update chart function for live plotting
-# This will get called every time a new message is processed
-#####################################
-'''
-'''
-def update_chart():
-    """Update the live chart with the latest author counts."""
-    # Clear the previous chart
-    ax.clear()
-
-    # Get the authors and counts from the dictionary
-    authors_list = list(author_counts.keys())
-    counts_list = list(author_counts.values())
-
-    # Create a bar chart using the bar() method.
-    # Pass in the x list, the y list, and the color
-    ax.bar(authors_list, counts_list, color="green")
-
-    # Use the built-in axes methods to set the labels and title
-    ax.set_xlabel("Authors")
-    ax.set_ylabel("Message Counts")
-    ax.set_title("Basic Real-Time Author Message Counts")
-
-    # Use the set_xticklabels() method to rotate the x-axis labels
-    # Pass in the x list, specify the rotation angle is 45 degrees,
-    # and align them to the right
-    # ha stands for horizontal alignment
-    ax.set_xticklabels(authors_list, rotation=45, ha="right")
-
-    # Use the tight_layout() method to automatically adjust the padding
-    plt.tight_layout()
-
-    # Draw the chart
-    plt.draw()
-
-    # Pause briefly to allow some time for the chart to render
-    plt.pause(0.01)
-'''
 # Two subplots: 
 # - Top: bar chart of author counts
 # - Bottom: sentiment trendlines by category
@@ -119,34 +64,7 @@ category_indices = defaultdict(list)     # {category: [message index]}
 #####################################
 
 message_counter = 0  # track message order
-'''
-def process_message(message: str | bytes):
-    global last_timestamp, message_counter, timestamps, message_indices
-    try:
-        if isinstance(message, bytes):
-            message = message.decode("utf-8")
 
-        message_dict = json.loads(message)
-
-        if isinstance(message_dict, dict):
-            author = message_dict.get("author", "unknown")
-            timestamp = message_dict.get("timestamp", "unknown")
-
-            # Update counts
-            author_counts[author] += 1
-            last_timestamp = timestamp  
-
-            # Update timeline data
-            message_counter += 1
-            timestamps.append(timestamp)
-            message_indices.append(message_counter)
-
-            update_chart()
-        else:
-            logger.error(f"Expected dict, got {type(message_dict)}")
-    except Exception as e:
-        logger.error(f"Error processing message: {e}")
-'''
 def process_message(message: str | bytes):
     global last_timestamp, message_counter
     try:
@@ -181,46 +99,7 @@ def process_message(message: str | bytes):
 #####################################
 # Update Chart
 #####################################
-'''
-def update_chart():
-    # --- Top subplot: Author counts ---
-    ax_counts.clear()
-    authors_list = list(author_counts.keys())
-    counts_list = list(author_counts.values())
 
-    ax_counts.bar(authors_list, counts_list, color="green")
-    ax_counts.set_xlabel("Authors")
-    ax_counts.set_ylabel("Message Counts")
-    ax_counts.set_title("Real-Time Author Message Counts")
-    ax_counts.set_xticklabels(authors_list, rotation=45, ha="right")
-
-    # Add latest timestamp callout
-    if last_timestamp:
-        ax_counts.text(
-            0.95, 0.95,
-            f"Last msg: {last_timestamp}",
-            ha="right", va="top",
-            transform=ax_counts.transAxes,
-            fontsize=9,
-            bbox=dict(facecolor="yellow", alpha=0.3, boxstyle="round,pad=0.3")
-        )
-
-    # --- Bottom subplot: Timeline ---
-    ax_timeline.clear()
-    if timestamps:
-        ax_timeline.plot(message_indices, timestamps, marker="o", color="blue", linestyle="-")
-        ax_timeline.set_xlabel("Message #")
-        ax_timeline.set_ylabel("Timestamp")
-        ax_timeline.set_title("Message Timeline")
-
-        # Rotate timestamp labels for readability
-        ax_timeline.set_xticks(message_indices)
-        ax_timeline.set_xticklabels(message_indices, rotation=45, ha="right")
-
-    plt.tight_layout()
-    plt.draw()
-    plt.pause(0.01)
-    '''
 def update_chart():
     # --- Top subplot: Author counts ---
     ax_counts.clear()
