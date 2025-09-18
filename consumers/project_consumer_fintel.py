@@ -52,6 +52,7 @@ author_counts = defaultdict(int)
 fig, ax = plt.subplots()
 plt.ion()  # Turn on interactive mode for live updates
 '''
+'''
 # Two subplots: 
 # - Top: bar chart of author counts
 # - Bottom: timeline of message arrivals
@@ -67,7 +68,7 @@ last_timestamp = None
 # Define an update chart function for live plotting
 # This will get called every time a new message is processed
 #####################################
-
+'''
 '''
 def update_chart():
     """Update the live chart with the latest author counts."""
@@ -102,13 +103,23 @@ def update_chart():
     # Pause briefly to allow some time for the chart to render
     plt.pause(0.01)
 '''
+# Two subplots: 
+# - Top: bar chart of author counts
+# - Bottom: sentiment trendlines by category
+fig, (ax_counts, ax_sentiment) = plt.subplots(2, 1, figsize=(8, 6), sharex=False)
+plt.ion()
 
+# Global storage
+message_counter = 0
+last_timestamp = None
+category_sentiments = defaultdict(list)  # {category: [sentiment scores]}
+category_indices = defaultdict(list)     # {category: [message index]}
 #####################################
 # Process Message Function
 #####################################
 
 message_counter = 0  # track message order
-
+'''
 def process_message(message: str | bytes):
     global last_timestamp, message_counter, timestamps, message_indices
     try:
@@ -135,12 +146,42 @@ def process_message(message: str | bytes):
             logger.error(f"Expected dict, got {type(message_dict)}")
     except Exception as e:
         logger.error(f"Error processing message: {e}")
+'''
+def process_message(message: str | bytes):
+    global last_timestamp, message_counter
+    try:
+        if isinstance(message, bytes):
+            message = message.decode("utf-8")
+
+        message_dict = json.loads(message)
+
+        if isinstance(message_dict, dict):
+            author = message_dict.get("author", "unknown")
+            timestamp = message_dict.get("timestamp", "unknown")
+            category = message_dict.get("category", "uncategorized")
+            sentiment = message_dict.get("sentiment", None)
+
+            # Update counts
+            author_counts[author] += 1
+            last_timestamp = timestamp  
+
+            # Update category trend data
+            message_counter += 1
+            if sentiment is not None:
+                category_sentiments[category].append(sentiment)
+                category_indices[category].append(message_counter)
+
+            update_chart()
+        else:
+            logger.error(f"Expected dict, got {type(message_dict)}")
+    except Exception as e:
+        logger.error(f"Error processing message: {e}")
 
 
 #####################################
 # Update Chart
 #####################################
-
+'''
 def update_chart():
     # --- Top subplot: Author counts ---
     ax_counts.clear()
@@ -179,6 +220,46 @@ def update_chart():
     plt.tight_layout()
     plt.draw()
     plt.pause(0.01)
+    '''
+def update_chart():
+    # --- Top subplot: Author counts ---
+    ax_counts.clear()
+    authors_list = list(author_counts.keys())
+    counts_list = list(author_counts.values())
+
+    ax_counts.bar(authors_list, counts_list, color="green")
+    ax_counts.set_xlabel("Authors")
+    ax_counts.set_ylabel("Message Counts")
+    ax_counts.set_title("Real-Time Author Message Counts")
+    ax_counts.set_xticklabels(authors_list, rotation=45, ha="right")
+
+    # Add latest timestamp callout
+    if last_timestamp:
+        ax_counts.text(
+            0.95, 0.95,
+            f"Last msg: {last_timestamp}",
+            ha="right", va="top",
+            transform=ax_counts.transAxes,
+            fontsize=9,
+            bbox=dict(facecolor="yellow", alpha=0.3, boxstyle="round,pad=0.3")
+        )
+
+    # --- Bottom subplot: Sentiment trend by category ---
+    ax_sentiment.clear()
+    for category, scores in category_sentiments.items():
+        indices = category_indices[category]
+        ax_sentiment.plot(indices, scores, marker="o", label=category)
+
+    ax_sentiment.set_xlabel("Message #")
+    ax_sentiment.set_ylabel("Sentiment Score")
+    ax_sentiment.set_title("Sentiment Trend by Category")
+    ax_sentiment.set_ylim(0, 1)  # sentiment between 0–1
+    ax_sentiment.legend(loc="upper right")
+
+    plt.tight_layout()
+    plt.draw()
+    plt.pause(0.01)
+
 #####################################
 # Main Function
 #####################################
