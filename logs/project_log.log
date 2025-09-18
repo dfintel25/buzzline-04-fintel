@@ -1,111 +1,105 @@
-2025-09-17 18:38:59 | INFO | {'message': 'I just tried Python! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:38:59', 'category': 'tech', 'sentiment': 0.43, 'keyword_mentioned': 'Python', 'message_length': 36}
-2025-09-17 18:38:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried Python! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:38:59', 'category': 'tech', 'sentiment': 0.43, 'keyword_mentioned': 'Python', 'message_length': 36}
-2025-09-17 18:39:00 | INFO | Processed JSON message: {'message': 'I just tried Python! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:38:59', 'category': 'tech', 'sentiment': 0.43, 'keyword_mentioned': 'Python', 'message_length': 36}
-2025-09-17 18:39:00 | INFO | Message received from author: Eve
-2025-09-17 18:39:00 | INFO | Updated author counts: {'Charlie': 1, 'Eve': 1}
-2025-09-17 18:39:00 | INFO | Chart updated successfully for message: {"message": "I just tried Python! It was amazing.", "author": "Eve", "timestamp": "2025-09-17 18:38:59", "category": "tech", "sentiment": 0.43, "keyword_mentioned": "Python", "message_length": 36}
-
-2025-09-17 18:39:04 | INFO | {'message': 'I just saw JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:04', 'category': 'tech', 'sentiment': 0.27, 'keyword_mentioned': 'JavaScript', 'message_length': 36}
-2025-09-17 18:39:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:04', 'category': 'tech', 'sentiment': 0.27, 'keyword_mentioned': 'JavaScript', 'message_length': 36}
-2025-09-17 18:39:04 | INFO | Processed JSON message: {'message': 'I just saw JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:04', 'category': 'tech', 'sentiment': 0.27, 'keyword_mentioned': 'JavaScript', 'message_length': 36}
-2025-09-17 18:39:04 | INFO | Message received from author: Alice
-2025-09-17 18:39:04 | INFO | Updated author counts: {'Charlie': 1, 'Eve': 1, 'Alice': 1}
-2025-09-17 18:39:04 | INFO | Chart updated successfully for message: {"message": "I just saw JavaScript! It was weird.", "author": "Alice", "timestamp": "2025-09-17 18:39:04", "category": "tech", "sentiment": 0.27, "keyword_mentioned": "JavaScript", "message_length": 36}
-
-2025-09-17 18:39:09 | INFO | {'message': 'I just tried recipe! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:09', 'category': 'food', 'sentiment': 0.48, 'keyword_mentioned': 'recipe', 'message_length': 36}
-2025-09-17 18:39:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried recipe! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:09', 'category': 'food', 'sentiment': 0.48, 'keyword_mentioned': 'recipe', 'message_length': 36}
-2025-09-17 18:39:09 | INFO | Processed JSON message: {'message': 'I just tried recipe! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:09', 'category': 'food', 'sentiment': 0.48, 'keyword_mentioned': 'recipe', 'message_length': 36}
-2025-09-17 18:39:09 | INFO | Message received from author: Alice
-2025-09-17 18:39:09 | INFO | Updated author counts: {'Charlie': 1, 'Eve': 1, 'Alice': 2}
-2025-09-17 18:39:09 | INFO | Chart updated successfully for message: {"message": "I just tried recipe! It was amazing.", "author": "Alice", "timestamp": "2025-09-17 18:39:09", "category": "food", "sentiment": 0.48, "keyword_mentioned": "recipe", "message_length": 36}
-
-2025-09-17 18:39:14 | INFO | {'message': 'I just shared a trick! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:14', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 39}
-2025-09-17 18:39:14 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:14', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 39}
-2025-09-17 18:39:14 | INFO | Processed JSON message: {'message': 'I just shared a trick! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:14', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 39}
-2025-09-17 18:39:14 | INFO | Message received from author: Eve
-2025-09-17 18:39:14 | INFO | Updated author counts: {'Charlie': 1, 'Eve': 2, 'Alice': 2}
-2025-09-17 18:39:15 | INFO | Chart updated successfully for message: {"message": "I just shared a trick! It was exciting.", "author": "Eve", "timestamp": "2025-09-17 18:39:14", "category": "other", "sentiment": 0.17, "keyword_mentioned": "other", "message_length": 39}
-
-2025-09-17 18:39:19 | INFO | {'message': 'I just saw a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:19', 'category': 'entertainment', 'sentiment': 0.18, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-17 18:39:19 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:19', 'category': 'entertainment', 'sentiment': 0.18, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-17 18:39:20 | INFO | Processed JSON message: {'message': 'I just saw a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:19', 'category': 'entertainment', 'sentiment': 0.18, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-17 18:39:20 | INFO | Message received from author: Alice
-2025-09-17 18:39:20 | INFO | Updated author counts: {'Charlie': 1, 'Eve': 2, 'Alice': 3}
-2025-09-17 18:39:20 | INFO | Chart updated successfully for message: {"message": "I just saw a movie! It was exciting.", "author": "Alice", "timestamp": "2025-09-17 18:39:19", "category": "entertainment", "sentiment": 0.18, "keyword_mentioned": "movie", "message_length": 36}
-
-2025-09-17 18:39:24 | INFO | {'message': 'I just found a meme! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:24', 'category': 'humor', 'sentiment': 0.87, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-17 18:39:24 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a meme! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:24', 'category': 'humor', 'sentiment': 0.87, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-17 18:39:25 | INFO | Processed JSON message: {'message': 'I just found a meme! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:24', 'category': 'humor', 'sentiment': 0.87, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-17 18:39:25 | INFO | Message received from author: Charlie
-2025-09-17 18:39:25 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 2, 'Alice': 3}
-2025-09-17 18:39:25 | INFO | Chart updated successfully for message: {"message": "I just found a meme! It was funny.", "author": "Charlie", "timestamp": "2025-09-17 18:39:24", "category": "humor", "sentiment": 0.87, "keyword_mentioned": "meme", "message_length": 34}
-
-2025-09-17 18:39:29 | INFO | {'message': 'I just found a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:29', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:29 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:29', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:29 | INFO | Processed JSON message: {'message': 'I just found a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:29', 'category': 'other', 'sentiment': 0.45, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:29 | INFO | Message received from author: Alice
-2025-09-17 18:39:29 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 2, 'Alice': 4}
-2025-09-17 18:39:29 | INFO | Chart updated successfully for message: {"message": "I just found a story! It was funny.", "author": "Alice", "timestamp": "2025-09-17 18:39:29", "category": "other", "sentiment": 0.45, "keyword_mentioned": "other", "message_length": 35}
-
-2025-09-17 18:39:34 | INFO | {'message': 'I just tried travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-17 18:39:34', 'category': 'travel', 'sentiment': 0.94, 'keyword_mentioned': 'travel', 'message_length': 37}
-2025-09-17 18:39:34 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-17 18:39:34', 'category': 'travel', 'sentiment': 0.94, 'keyword_mentioned': 'travel', 'message_length': 37}
-2025-09-17 18:39:34 | INFO | Processed JSON message: {'message': 'I just tried travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-17 18:39:34', 'category': 'travel', 'sentiment': 0.94, 'keyword_mentioned': 'travel', 'message_length': 37}
-2025-09-17 18:39:34 | INFO | Message received from author: Bob
-2025-09-17 18:39:34 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 2, 'Alice': 4, 'Bob': 1}
-2025-09-17 18:39:34 | INFO | Chart updated successfully for message: {"message": "I just tried travel! It was exciting.", "author": "Bob", "timestamp": "2025-09-17 18:39:34", "category": "travel", "sentiment": 0.94, "keyword_mentioned": "travel", "message_length": 37}
-
-2025-09-17 18:39:39 | INFO | {'message': 'I just shared an app! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:39', 'category': 'other', 'sentiment': 0.6, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:39 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared an app! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:39', 'category': 'other', 'sentiment': 0.6, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:39 | INFO | Processed JSON message: {'message': 'I just shared an app! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:39', 'category': 'other', 'sentiment': 0.6, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-17 18:39:39 | INFO | Message received from author: Alice
-2025-09-17 18:39:40 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 2, 'Alice': 5, 'Bob': 1}
-2025-09-17 18:39:40 | INFO | Chart updated successfully for message: {"message": "I just shared an app! It was funny.", "author": "Alice", "timestamp": "2025-09-17 18:39:39", "category": "other", "sentiment": 0.6, "keyword_mentioned": "other", "message_length": 35}
-
-2025-09-17 18:39:44 | INFO | {'message': 'I just found travel! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:44', 'category': 'travel', 'sentiment': 0.78, 'keyword_mentioned': 'travel', 'message_length': 36}
-2025-09-17 18:39:44 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found travel! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:44', 'category': 'travel', 'sentiment': 0.78, 'keyword_mentioned': 'travel', 'message_length': 36}
-2025-09-17 18:39:45 | INFO | Processed JSON message: {'message': 'I just found travel! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-17 18:39:44', 'category': 'travel', 'sentiment': 0.78, 'keyword_mentioned': 'travel', 'message_length': 36}
-2025-09-17 18:39:45 | INFO | Message received from author: Eve
-2025-09-17 18:39:45 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 3, 'Alice': 5, 'Bob': 1}
-2025-09-17 18:39:45 | INFO | Chart updated successfully for message: {"message": "I just found travel! It was amazing.", "author": "Eve", "timestamp": "2025-09-17 18:39:44", "category": "travel", "sentiment": 0.78, "keyword_mentioned": "travel", "message_length": 36}
-
-2025-09-17 18:39:49 | INFO | {'message': 'I just shared a trick! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:49', 'category': 'other', 'sentiment': 0.71, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-17 18:39:49 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:49', 'category': 'other', 'sentiment': 0.71, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-17 18:39:50 | INFO | Processed JSON message: {'message': 'I just shared a trick! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:49', 'category': 'other', 'sentiment': 0.71, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-17 18:39:50 | INFO | Message received from author: Alice
-2025-09-17 18:39:50 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 3, 'Alice': 6, 'Bob': 1}
-2025-09-17 18:39:50 | INFO | Chart updated successfully for message: {"message": "I just shared a trick! It was weird.", "author": "Alice", "timestamp": "2025-09-17 18:39:49", "category": "other", "sentiment": 0.71, "keyword_mentioned": "other", "message_length": 36}
-
-2025-09-17 18:39:54 | INFO | {'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:54', 'category': 'other', 'sentiment': 0.35, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:54 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:54', 'category': 'other', 'sentiment': 0.35, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:54 | INFO | Processed JSON message: {'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:39:54', 'category': 'other', 'sentiment': 0.35, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:54 | INFO | Message received from author: Alice
-2025-09-17 18:39:54 | INFO | Updated author counts: {'Charlie': 2, 'Eve': 3, 'Alice': 7, 'Bob': 1}
-2025-09-17 18:39:54 | INFO | Chart updated successfully for message: {"message": "I just shared an app! It was amazing.", "author": "Alice", "timestamp": "2025-09-17 18:39:54", "category": "other", "sentiment": 0.35, "keyword_mentioned": "other", "message_length": 37}
-
-2025-09-17 18:39:59 | INFO | {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:59', 'category': 'other', 'sentiment': 0.06, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:59', 'category': 'other', 'sentiment': 0.06, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:59 | INFO | Processed JSON message: {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:39:59', 'category': 'other', 'sentiment': 0.06, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-17 18:39:59 | INFO | Message received from author: Charlie
-2025-09-17 18:39:59 | INFO | Updated author counts: {'Charlie': 3, 'Eve': 3, 'Alice': 7, 'Bob': 1}
-2025-09-17 18:39:59 | INFO | Chart updated successfully for message: {"message": "I just shared a trick! It was boring.", "author": "Charlie", "timestamp": "2025-09-17 18:39:59", "category": "other", "sentiment": 0.06, "keyword_mentioned": "other", "message_length": 37}
-
-2025-09-17 18:40:04 | INFO | {'message': 'I just shared game! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:40:04', 'category': 'gaming', 'sentiment': 0.33, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-17 18:40:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared game! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:40:04', 'category': 'gaming', 'sentiment': 0.33, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-17 18:40:04 | INFO | Processed JSON message: {'message': 'I just shared game! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:40:04', 'category': 'gaming', 'sentiment': 0.33, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-17 18:40:04 | INFO | Message received from author: Alice
-2025-09-17 18:40:04 | INFO | Updated author counts: {'Charlie': 3, 'Eve': 3, 'Alice': 8, 'Bob': 1}
-2025-09-17 18:40:05 | INFO | Chart updated successfully for message: {"message": "I just shared game! It was amazing.", "author": "Alice", "timestamp": "2025-09-17 18:40:04", "category": "gaming", "sentiment": 0.33, "keyword_mentioned": "game", "message_length": 35}
-
-2025-09-17 18:40:09 | INFO | {'message': 'I just found recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:40:09', 'category': 'food', 'sentiment': 0.23, 'keyword_mentioned': 'recipe', 'message_length': 34}
-2025-09-17 18:40:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:40:09', 'category': 'food', 'sentiment': 0.23, 'keyword_mentioned': 'recipe', 'message_length': 34}
-2025-09-17 18:40:10 | INFO | Processed JSON message: {'message': 'I just found recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:40:09', 'category': 'food', 'sentiment': 0.23, 'keyword_mentioned': 'recipe', 'message_length': 34}
-2025-09-17 18:40:10 | INFO | Message received from author: Bob
-2025-09-17 18:40:10 | INFO | Updated author counts: {'Charlie': 3, 'Eve': 3, 'Alice': 8, 'Bob': 2}
-2025-09-17 18:40:10 | INFO | Chart updated successfully for message: {"message": "I just found recipe! It was weird.", "author": "Bob", "timestamp": "2025-09-17 18:40:09", "category": "food", "sentiment": 0.23, "keyword_mentioned": "recipe", "message_length": 34}
-
-2025-09-17 18:40:13 | INFO | Consumer interrupted by user.
-2025-09-17 18:40:14 | INFO | {'message': 'I just saw game! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:40:14', 'category': 'gaming', 'sentiment': 0.74, 'keyword_mentioned': 'game', 'message_length': 30}
-2025-09-17 18:40:14 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw game! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-17 18:40:14', 'category': 'gaming', 'sentiment': 0.74, 'keyword_mentioned': 'game', 'message_length': 30}
-2025-09-17 18:40:17 | WARNING | Producer interrupted by user.
-2025-09-17 18:40:17 | INFO | Kafka producer closed.
-2025-09-17 18:40:17 | INFO | Producer shutting down.
+2025-09-17 18:52:33 | INFO | Logging to file: logs/project_log.log
+2025-09-17 18:52:33 | INFO | Log sanitization enabled, personal info removed
+2025-09-17 18:52:33 | INFO | Project root: PROJECT_ROOT
+2025-09-17 18:52:33 | INFO | Data folder: PROJECT_ROOT/data
+2025-09-17 18:52:33 | INFO | Data file: PROJECT_ROOT/data/project_live.json
+2025-09-17 18:52:33 | INFO | START consumer.
+2025-09-17 18:52:44 | INFO | Logging to file: logs/project_log.log
+2025-09-17 18:52:44 | INFO | Log sanitization enabled, personal info removed
+2025-09-17 18:52:44 | INFO | START producer...
+2025-09-17 18:52:44 | INFO | Kafka producer connected to localhost:9092
+2025-09-17 18:52:44 | INFO | {'message': 'I just found JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:52:44', 'category': 'tech', 'sentiment': 0.63, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-09-17 18:52:44 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:52:44', 'category': 'tech', 'sentiment': 0.63, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-09-17 18:52:44 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:52:49 | INFO | {'message': 'I just loved an app! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:52:49', 'category': 'other', 'sentiment': 0.36, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-17 18:52:49 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved an app! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:52:49', 'category': 'other', 'sentiment': 0.36, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-17 18:52:49 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:52:54 | INFO | {'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:52:54', 'category': 'other', 'sentiment': 0.4, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-17 18:52:54 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:52:54', 'category': 'other', 'sentiment': 0.4, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-17 18:52:54 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:52:59 | INFO | {'message': 'I just tried a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-17 18:52:59', 'category': 'entertainment', 'sentiment': 0.89, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:52:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-17 18:52:59', 'category': 'entertainment', 'sentiment': 0.89, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:52:59 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:04 | INFO | {'message': 'I just found game! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:04', 'category': 'gaming', 'sentiment': 0.24, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-09-17 18:53:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found game! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:04', 'category': 'gaming', 'sentiment': 0.24, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-09-17 18:53:04 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:09 | INFO | {'message': 'I just loved travel! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-17 18:53:09', 'category': 'travel', 'sentiment': 0.72, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-17 18:53:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-17 18:53:09', 'category': 'travel', 'sentiment': 0.72, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-17 18:53:09 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:14 | INFO | {'message': 'I just found recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:14', 'category': 'food', 'sentiment': 0.31, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-09-17 18:53:14 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:14', 'category': 'food', 'sentiment': 0.31, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-09-17 18:53:14 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:19 | INFO | {'message': 'I just loved an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:19', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-17 18:53:19 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:19', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-09-17 18:53:19 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:24 | INFO | {'message': 'I just shared recipe! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:24', 'category': 'food', 'sentiment': 0.63, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-17 18:53:24 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared recipe! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:24', 'category': 'food', 'sentiment': 0.63, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-17 18:53:24 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:29 | INFO | {'message': 'I just saw a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:29', 'category': 'other', 'sentiment': 0.58, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-17 18:53:29 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:29', 'category': 'other', 'sentiment': 0.58, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-17 18:53:29 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:34 | INFO | {'message': 'I just found a movie! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:34', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-17 18:53:34 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a movie! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:34', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-17 18:53:34 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:39 | INFO | {'message': 'I just shared a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:39', 'category': 'other', 'sentiment': 0.7, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:53:39 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:39', 'category': 'other', 'sentiment': 0.7, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:53:39 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:44 | INFO | {'message': 'I just found a trick! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:44', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-17 18:53:44 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a trick! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:53:44', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-17 18:53:44 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:49 | INFO | {'message': 'I just found a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:49', 'category': 'entertainment', 'sentiment': 0.03, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:53:49 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-17 18:53:49', 'category': 'entertainment', 'sentiment': 0.03, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:53:49 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:54 | INFO | {'message': 'I just shared game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:54', 'category': 'gaming', 'sentiment': 0.58, 'keyword_mentioned': 'game', 'message_length': 36}
+2025-09-17 18:53:54 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:54', 'category': 'gaming', 'sentiment': 0.58, 'keyword_mentioned': 'game', 'message_length': 36}
+2025-09-17 18:53:54 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:53:59 | INFO | {'message': 'I just saw travel! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:59', 'category': 'travel', 'sentiment': 0.72, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-17 18:53:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw travel! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-17 18:53:59', 'category': 'travel', 'sentiment': 0.72, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-17 18:53:59 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:04 | INFO | {'message': 'I just shared a movie! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:04', 'category': 'entertainment', 'sentiment': 0.5, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-17 18:54:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a movie! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:04', 'category': 'entertainment', 'sentiment': 0.5, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-17 18:54:04 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:09 | INFO | {'message': 'I just shared JavaScript! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:54:09', 'category': 'tech', 'sentiment': 0.04, 'keyword_mentioned': 'JavaScript', 'message_length': 42}
+2025-09-17 18:54:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared JavaScript! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:54:09', 'category': 'tech', 'sentiment': 0.04, 'keyword_mentioned': 'JavaScript', 'message_length': 42}
+2025-09-17 18:54:09 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:14 | INFO | {'message': 'I just shared travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-17 18:54:14', 'category': 'travel', 'sentiment': 0.07, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-17 18:54:14 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-17 18:54:14', 'category': 'travel', 'sentiment': 0.07, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-17 18:54:14 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:19 | INFO | {'message': 'I just tried a movie! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:19', 'category': 'entertainment', 'sentiment': 0.59, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:54:19 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried a movie! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:19', 'category': 'entertainment', 'sentiment': 0.59, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-17 18:54:19 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:24 | INFO | {'message': 'I just found game! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:24', 'category': 'gaming', 'sentiment': 0.18, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-09-17 18:54:24 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found game! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:24', 'category': 'gaming', 'sentiment': 0.18, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-09-17 18:54:24 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:29 | INFO | {'message': 'I just tried JavaScript! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:29', 'category': 'tech', 'sentiment': 0.69, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-09-17 18:54:29 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried JavaScript! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:29', 'category': 'tech', 'sentiment': 0.69, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-09-17 18:54:29 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:34 | INFO | {'message': 'I just shared Python! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:34', 'category': 'tech', 'sentiment': 0.83, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-17 18:54:34 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared Python! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:34', 'category': 'tech', 'sentiment': 0.83, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-17 18:54:34 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:39 | INFO | {'message': 'I just loved recipe! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:39', 'category': 'food', 'sentiment': 0.55, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-17 18:54:39 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved recipe! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:39', 'category': 'food', 'sentiment': 0.55, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-17 18:54:40 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:44 | INFO | {'message': 'I just shared game! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-17 18:54:44', 'category': 'gaming', 'sentiment': 0.6, 'keyword_mentioned': 'game', 'message_length': 36}
+2025-09-17 18:54:44 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared game! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-17 18:54:44', 'category': 'gaming', 'sentiment': 0.6, 'keyword_mentioned': 'game', 'message_length': 36}
+2025-09-17 18:54:45 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:49 | INFO | {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:49', 'category': 'other', 'sentiment': 0.47, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-17 18:54:49 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-17 18:54:49', 'category': 'other', 'sentiment': 0.47, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-17 18:54:50 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:54 | INFO | {'message': 'I just shared a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:54:54', 'category': 'other', 'sentiment': 0.51, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:54:54 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:54:54', 'category': 'other', 'sentiment': 0.51, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:54:55 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:54:59 | INFO | {'message': 'I just shared a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:59', 'category': 'other', 'sentiment': 0.3, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:54:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-17 18:54:59', 'category': 'other', 'sentiment': 0.3, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:55:00 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:55:04 | INFO | {'message': 'I just shared a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:55:04', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:55:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-17 18:55:04', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-17 18:55:05 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:55:09 | INFO | {'message': 'I just tried travel! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:55:09', 'category': 'travel', 'sentiment': 0.66, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-09-17 18:55:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried travel! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-17 18:55:09', 'category': 'travel', 'sentiment': 0.66, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-09-17 18:55:10 | ERROR | Error processing message: name 'timestamps' is not defined
+2025-09-17 18:55:13 | WARNING | Producer interrupted by user.
+2025-09-17 18:55:13 | INFO | Kafka producer closed.
+2025-09-17 18:55:13 | INFO | Producer shutting down.
+2025-09-17 18:56:21 | INFO | Consumer interrupted by user.
+2025-09-17 18:56:23 | INFO | Consumer closed.
