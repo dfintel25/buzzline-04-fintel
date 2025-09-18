@@ -48,16 +48,27 @@ author_counts = defaultdict(int)
 #####################################
 # Set up live visuals
 #####################################
-
+'''
 fig, ax = plt.subplots()
 plt.ion()  # Turn on interactive mode for live updates
+'''
+# Two subplots: 
+# - Top: bar chart of author counts
+# - Bottom: timeline of message arrivals
+fig, (ax_counts, ax_timeline) = plt.subplots(2, 1, figsize=(8, 6), sharex=False)
+plt.ion()
 
+# Global timeline storage
+timestamps = []
+message_indices = []
+message_counter = 0
+last_timestamp = None
 #####################################
 # Define an update chart function for live plotting
 # This will get called every time a new message is processed
 #####################################
 
-
+'''
 def update_chart():
     """Update the live chart with the latest author counts."""
     # Clear the previous chart
@@ -90,92 +101,16 @@ def update_chart():
 
     # Pause briefly to allow some time for the chart to render
     plt.pause(0.01)
-
+'''
 
 #####################################
 # Process Message Function
 #####################################
 
-'''
-def process_message(message: str) -> None:
-    """
-    Process a single JSON message and update the chart.
-
-    Args:
-        message (str): The JSON message as a string.
-    """
-    try:
-        # Log the raw message for debugging
-        logger.debug(f"Raw message: {message}")
-
-        # Parse the JSON string into a Python dictionary
-        message_dict: dict = json.loads(message)
-       
-        # Ensure the processed JSON is logged for debugging
-        logger.info(f"Processed JSON message: {message_dict}")
-
-        # Ensure it's a dictionary before accessing fields
-        if isinstance(message_dict, dict):
-            # Extract the 'author' field from the Python dictionary
-            author = message_dict.get("author", "unknown")
-            logger.info(f"Message received from author: {author}")
-
-            # Increment the count for the author
-            author_counts[author] += 1
-
-            # Log the updated counts
-            logger.info(f"Updated author counts: {dict(author_counts)}")
-
-            # Update the chart
-            update_chart()
-
-            # Log the updated chart
-            logger.info(f"Chart updated successfully for message: {message}")
-
-        else:
-            logger.error(f"Expected a dictionary but got: {type(message_dict)}")
-
-    except json.JSONDecodeError:
-        logger.error(f"Invalid JSON message: {message}")
-    except Exception as e:
-        logger.error(f"Error processing message: {e}")
-
-#####################################
-# Process Message
-#####################################
-
-last_timestamp = None  # track latest message time
-
-def process_message(message: str | bytes):
-    global last_timestamp
-    try:
-        if isinstance(message, bytes):
-            message = message.decode("utf-8")
-
-        logger.debug(f"Raw message: {message}")
-        message_dict = json.loads(message)
-
-        if isinstance(message_dict, dict):
-            author = message_dict.get("author", "unknown")
-            timestamp = message_dict.get("timestamp", "unknown")
-
-            # update counts + last seen timestamp
-            author_counts[author] += 1
-            last_timestamp = timestamp  
-
-            logger.info(f"Updated counts: {dict(author_counts)}")
-            update_chart()
-        else:
-            logger.error(f"Expected dict, got {type(message_dict)}")
-    except Exception as e:
-        logger.error(f"Error processing message: {e}")
-
-
-'''
 message_counter = 0  # track message order
 
 def process_message(message: str | bytes):
-    global last_timestamp, message_counter
+    global last_timestamp, message_counter, timestamps, message_indices
     try:
         if isinstance(message, bytes):
             message = message.decode("utf-8")
@@ -205,34 +140,6 @@ def process_message(message: str | bytes):
 #####################################
 # Update Chart
 #####################################
-'''
-def update_chart():
-    ax.clear()
-    authors_list = list(author_counts.keys())
-    counts_list = list(author_counts.values())
-
-    ax.bar(authors_list, counts_list, color="green")
-    ax.set_xlabel("Authors")
-    ax.set_ylabel("Message Counts")
-    ax.set_title("Real-Time Author Message Counts")
-
-    ax.set_xticklabels(authors_list, rotation=45, ha="right")
-
-    # Add latest timestamp as a text callout at the top
-    if last_timestamp:
-        ax.text(
-            0.95, 0.95,
-            f"Last msg: {last_timestamp}",
-            ha="right", va="top",
-            transform=ax.transAxes,
-            fontsize=9,
-            bbox=dict(facecolor="yellow", alpha=0.3, boxstyle="round,pad=0.3")
-        )
-
-    plt.tight_layout()
-    plt.draw()
-    plt.pause(0.01)
-'''
 
 def update_chart():
     # --- Top subplot: Author counts ---
